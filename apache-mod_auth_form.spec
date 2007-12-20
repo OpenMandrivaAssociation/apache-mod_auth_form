@@ -27,6 +27,7 @@ BuildRequires:  file
 BuildRequires:  autoconf2.5
 BuildRequires:  automake1.7
 BuildRequires:  libtool
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %description
 This module is a form-based authorization module based on 'mod_auth_mysql' and
