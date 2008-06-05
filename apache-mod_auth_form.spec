@@ -66,7 +66,7 @@ export APXS="%{_sbindir}/apxs"
 export APACHE2_INCLUDE="`$APXS -q INCLUDEDIR`"
 export CPPFLAGS="`%{_bindir}/apr-1-config --cppflags`"
 
-%configure2_5x
+%configure2_5x --localstatedir=/var/lib
 
 %make
 
