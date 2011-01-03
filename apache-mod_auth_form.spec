@@ -6,7 +6,7 @@
 Summary:	Form-based, authorization module using MySQL and session management
 Name:		apache-%{mod_name}
 Version:	2.05
-Release:	%mkrel 14
+Release:	%mkrel 15
 Group:		System/Servers
 License:	Apache License
 URL:		http://www.csce.uark.edu/~ajarthu/mod_auth_form/
@@ -25,7 +25,7 @@ BuildRequires:	apache-devel >= 2.2.0
 BuildRequires:	mysql-devel
 BuildRequires:  file
 BuildRequires:  autoconf2.5
-BuildRequires:  automake1.7
+BuildRequires:  automake
 BuildRequires:  libtool
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
@@ -60,7 +60,7 @@ find . -type f|xargs file|grep 'text'|cut -d: -f1|xargs perl -p -i -e 's/\r//'
 
 %build
 rm -rf configure autom4te.cache
-libtoolize --copy --force; aclocal-1.7; autoconf; automake-1.7 --add-missing --copy --foreign; autoconf
+libtoolize --copy --force; aclocal; autoconf; automake --add-missing --copy --foreign; autoconf
 
 export APXS="%{_sbindir}/apxs"
 export APACHE2_INCLUDE="`$APXS -q INCLUDEDIR`"
