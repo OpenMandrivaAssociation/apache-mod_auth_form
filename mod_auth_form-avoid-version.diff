@@ -1,0 +1,11 @@
+--- src/Makefile.am	2007-02-12 09:30:15.000000000 +0100
++++ src/Makefile.am.oden	2007-02-12 09:31:11.000000000 +0100
+@@ -3,7 +3,7 @@
+ 
+ ## Define some compilation parameters for the module
+ mod_auth_form_la_SOURCES = mod_auth_form.c
+-mod_auth_form_la_LDFLAGS = -version-info 2:5:1 -module $(MYSQLCLIENT_LIBFLAGS)
++mod_auth_form_la_LDFLAGS = -module -avoid-version $(MYSQLCLIENT_LIBFLAGS)
+ mod_auth_form_la_LIBADD = -l$(MYSQLCLIENT_LIB) -lz
+ 
+ ## Add the required include files to the compiler
