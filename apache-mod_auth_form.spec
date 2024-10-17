@@ -9,7 +9,7 @@ Version:	2.05
 Release:	%mkrel 18
 Group:		System/Servers
 License:	Apache License
-URL:		http://www.csce.uark.edu/~ajarthu/mod_auth_form/
+URL:		https://www.csce.uark.edu/~ajarthu/mod_auth_form/
 Source0:	%{mod_name}-%{version}-src.tar.gz
 Source1:	%{mod_conf}
 Source2:	README.html
