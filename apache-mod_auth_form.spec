@@ -21,6 +21,8 @@ Requires(pre):	apache-conf >= 2.2.0
 Requires(pre):	apache >= 2.2.0
 Requires:	apache-conf >= 2.2.0
 Requires:	apache >= 2.2.0
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
 BuildRequires:	apache-devel >= 2.2.0
 BuildRequires:	mysql-devel
 BuildRequires:  file
