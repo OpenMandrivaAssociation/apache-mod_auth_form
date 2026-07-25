@@ -6,7 +6,7 @@
 Summary:	Form-based, authorization module using MySQL and session management
 Name:		apache-%{mod_name}
 Version:	2.05
-Release:	%mkrel 18
+Release:	19
 Group:		System/Servers
 License:	Apache License
 URL:		https://www.csce.uark.edu/~ajarthu/mod_auth_form/
